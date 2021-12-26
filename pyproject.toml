@@ -1,0 +1,24 @@
+[tool.poetry]
+authors = ["Atsushi Nakagawa <46158n@gmail.com>"]
+description = ""
+name = "add_to_todoist"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+python-dotenv = "^0.19.2"
+todoist-api-python = "^1.1.0"
+attrs = "^21.2.0"
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+flake8 = "^4.0.1"
+isort = "^5.10.1"
+mypy = "^0.930"
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
